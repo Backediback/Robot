@@ -1,0 +1,14 @@
+C:\src\Robot\RobotApp\ConsoleApp1\bin\Debug\net8.0\RobotApp.exe
+C:\src\Robot\RobotApp\ConsoleApp1\bin\Debug\net8.0\RobotApp.deps.json
+C:\src\Robot\RobotApp\ConsoleApp1\bin\Debug\net8.0\RobotApp.runtimeconfig.json
+C:\src\Robot\RobotApp\ConsoleApp1\bin\Debug\net8.0\RobotApp.dll
+C:\src\Robot\RobotApp\ConsoleApp1\bin\Debug\net8.0\RobotApp.pdb
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.AssemblyInfoInputs.cache
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.AssemblyInfo.cs
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.csproj.CoreCompileInputs.cache
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.dll
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\refint\RobotApp.dll
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.pdb
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.genruntimeconfig.cache
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\ref\RobotApp.dll
