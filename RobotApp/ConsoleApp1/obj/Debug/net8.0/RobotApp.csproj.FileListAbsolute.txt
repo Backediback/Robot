@@ -12,3 +12,4 @@ C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\refint\RobotApp.dll
 C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.pdb
 C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.genruntimeconfig.cache
 C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\ref\RobotApp.dll
+C:\src\Robot\RobotApp\ConsoleApp1\obj\Debug\net8.0\RobotApp.sourcelink.json

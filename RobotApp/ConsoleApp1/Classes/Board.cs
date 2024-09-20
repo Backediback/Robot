@@ -18,7 +18,5 @@ namespace RobotApp.Classes
             Depth = depth;
             _height = height;
         }
-
-
     }
 }
