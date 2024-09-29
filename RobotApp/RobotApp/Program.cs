@@ -2,26 +2,26 @@
 
 string input = string.Empty;
 string[]? inputStart = null;
-string[]? inputBoard = null;
+string[]? inputRoom = null;
 string[]? inputMove = null;
-Board board = null!;
+Room room = null!;
 Robot robot = null!;
 
-//Setup Board
-while (board == null)
+//Setup room
+while (room == null)
 {
     try
     {
-        Console.WriteLine("Enter board Height and depth (5 5):");
+        Console.WriteLine("Enter room Height and depth (5 5):");
 
         input = Console.ReadLine()!;
-        inputBoard = input.Split(' ');
+        inputRoom = input.Split(' ');
 
-        board = new Board(Convert.ToInt32(inputBoard[0]), Convert.ToInt32(inputBoard[1]));
+        room = new Room(Convert.ToInt32(inputRoom[0]), Convert.ToInt32(inputRoom[1]));
     }
     catch(Exception ex)
     { 
-        board = null!;
+        room = null!;
         Console.WriteLine(ex.Message + " please try again"); 
     }
 }
@@ -66,7 +66,7 @@ while (inputMove == null)
     }
 }
 robot.DoMove();
-if (!(robot.PositionX <= board.Height && robot.PositionX >= 0 && robot.PositionY <= board.Depth && robot.PositionY >= 0))
+if (!(robot.PositionX <= room.Height && robot.PositionX >= 0 && robot.PositionY <= room.Depth && robot.PositionY >= 0))
     Console.WriteLine("Report: Out of bounds");
 else
     Console.WriteLine($"Report: {robot.PositionX} {robot.PositionY} {robot.Facing}");

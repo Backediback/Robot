@@ -945,8 +945,8 @@
     },
     "RobotApp/1.0.0": {
       "type": "project",
-      "path": "../ConsoleApp1/RobotApp.csproj",
-      "msbuildProject": "../ConsoleApp1/RobotApp.csproj"
+      "path": "../RobotApp/RobotApp.csproj",
+      "msbuildProject": "../RobotApp/RobotApp.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -964,11 +964,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\src\\Robot\\robotapp\\robot.test\\Robot.Test.csproj",
+      "projectUniqueName": "C:\\src\\Robot\\RobotApp\\Robot.Test\\Robot.Test.csproj",
       "projectName": "Robot.Test",
-      "projectPath": "C:\\src\\Robot\\robotapp\\robot.test\\Robot.Test.csproj",
+      "projectPath": "C:\\src\\Robot\\RobotApp\\Robot.Test\\Robot.Test.csproj",
       "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\Robot\\robotapp\\robot.test\\obj\\",
+      "outputPath": "C:\\src\\Robot\\RobotApp\\Robot.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -985,8 +985,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\src\\Robot\\robotapp\\ConsoleApp1\\RobotApp.csproj": {
-              "projectPath": "C:\\src\\Robot\\robotapp\\ConsoleApp1\\RobotApp.csproj"
+            "C:\\src\\Robot\\RobotApp\\RobotApp\\RobotApp.csproj": {
+              "projectPath": "C:\\src\\Robot\\RobotApp\\RobotApp\\RobotApp.csproj"
             }
           }
         }

@@ -3,18 +3,18 @@ using RobotApp.Classes;
 
 namespace Robot.Test
 {
-    public class BoardTest
+    public class RoomTest
     {
         [Fact]
-        public void Check_Board_isnotNull()
+        public void Check_Room_isnotNull()
         {
-            Board? board = null;
+            Room? room = null;
             try
             {
-                board = new Board();
+                room = new Room();
             }
             catch {}
-            Assert.NotNull(board);
+            Assert.NotNull(room);
         }
     }
 }

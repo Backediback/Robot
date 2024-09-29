@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GjBnyNceIZ30XW7REpT3x2trkq3zoDEy06MIfYP3jcI6n2q5hVUx2KvQYedf3ELaj/g4oXE6QZPvgMi+N3giow==",
+  "dgSpecHash": "VFAWolBAXmgkFSrjAzv5OPr6u3p+iQHusNBYG3sELo7LtFmb/ri94S6MhAbfi9jyZWwJJ3zlz56pk810kxh1ng==",
   "success": true,
-  "projectFilePath": "C:\\src\\Robot\\robotapp\\robot.test\\Robot.Test.csproj",
+  "projectFilePath": "C:\\src\\Robot\\RobotApp\\Robot.Test\\Robot.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ander\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",

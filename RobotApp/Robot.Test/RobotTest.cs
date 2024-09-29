@@ -15,29 +15,29 @@ namespace Robot.Test
         }
 
         [Fact]
-        public void Move_Out_Of_Board()
+        public void Move_Out_Of_Room()
         {
             //Arrange
-            RobotApp.Classes.Board board = new RobotApp.Classes.Board(5, 5);
+            RobotApp.Classes.Room room = new RobotApp.Classes.Room(5, 5);
             RobotApp.Classes.Robot robot = new RobotApp.Classes.Robot(0,0, "N");
             robot.UserMove = ["F"];
             //Act
             robot.DoMove();
-            bool inBound = robot.PositionX <= board.Height && robot.PositionX >= 0 && robot.PositionY <= board.Depth && robot.PositionY >= 0;
+            bool inBound = robot.PositionX <= room.Height && robot.PositionX >= 0 && robot.PositionY <= room.Depth && robot.PositionY >= 0;
             //Assert
             Assert.False(inBound);
         }
 
         [Fact]
-        public void Move_Not_Out_Of_Board()
+        public void Move_Not_Out_Of_Room()
         {
             //Arrange
-            RobotApp.Classes.Board board = new RobotApp.Classes.Board(5, 5);
+            RobotApp.Classes.Room room = new RobotApp.Classes.Room(5, 5);
             RobotApp.Classes.Robot robot = new RobotApp.Classes.Robot(0, 0, "N");
             robot.UserMove = ["RRFF"];
             //Act
             robot.DoMove();
-            bool inBound = robot.PositionX <= board.Height && robot.PositionX >= 0 && robot.PositionY <= board.Depth && robot.PositionY >= 0;
+            bool inBound = robot.PositionX <= room.Height && robot.PositionX >= 0 && robot.PositionY <= room.Depth && robot.PositionY >= 0;
             //Assert
             Assert.True(inBound);
         }
