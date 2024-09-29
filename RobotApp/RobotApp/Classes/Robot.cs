@@ -16,7 +16,7 @@ namespace RobotApp.Classes
         public string Facing { get => _facing; set => _facing = value; }
         public int PositionX { get => _positionX; set => _positionX = value; }
         public int PositionY { get => _positionY; set => _positionY = value; }
-        public string[] UserMove { get => _userMove!; set => _userMove = value; }
+        public string[]? UserMove { get => _userMove!; set => _userMove = value; }
 
         public Robot(int startX, int startY, string facing)
         {

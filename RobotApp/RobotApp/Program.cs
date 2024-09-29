@@ -3,7 +3,6 @@
 string input = string.Empty;
 string[]? inputStart = null;
 string[]? inputRoom = null;
-string[]? inputMove = null;
 Room room = null!;
 Robot robot = null!;
 
