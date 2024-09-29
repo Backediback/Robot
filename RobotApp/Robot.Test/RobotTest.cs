@@ -1,5 +1,3 @@
-using Newtonsoft.Json.Linq;
-using RobotApp.Classes;
 namespace Robot.Test
 {
     public class RobotTest
@@ -20,12 +18,28 @@ namespace Robot.Test
         public void Move_Out_Of_Board()
         {
             //Arrange
+            RobotApp.Classes.Board board = new RobotApp.Classes.Board(5, 5);
             RobotApp.Classes.Robot robot = new RobotApp.Classes.Robot(0,0, "N");
-            robot.UserMove = ["F"]; ;
+            robot.UserMove = ["F"];
             //Act
             robot.DoMove();
+            bool inBound = robot.PositionX <= board.Height && robot.PositionX >= 0 && robot.PositionY <= board.Depth && robot.PositionY >= 0;
             //Assert
-            Assert.True(robot.PositionY == -1);
+            Assert.False(inBound);
+        }
+
+        [Fact]
+        public void Move_Not_Out_Of_Board()
+        {
+            //Arrange
+            RobotApp.Classes.Board board = new RobotApp.Classes.Board(5, 5);
+            RobotApp.Classes.Robot robot = new RobotApp.Classes.Robot(0, 0, "N");
+            robot.UserMove = ["RRFF"];
+            //Act
+            robot.DoMove();
+            bool inBound = robot.PositionX <= board.Height && robot.PositionX >= 0 && robot.PositionY <= board.Depth && robot.PositionY >= 0;
+            //Assert
+            Assert.True(inBound);
         }
     }
 }

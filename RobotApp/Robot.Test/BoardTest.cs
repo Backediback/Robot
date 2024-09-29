@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using RobotApp.Classes;
 
 namespace Robot.Test
 {
-    internal class BoardTest
+    public class BoardTest
     {
+        [Fact]
+        public void Check_Board_isnotNull()
+        {
+            Board? board = null;
+            try
+            {
+                board = new Board();
+            }
+            catch {}
+            Assert.NotNull(board);
+        }
     }
 }
