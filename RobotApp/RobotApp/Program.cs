@@ -34,7 +34,8 @@ while (robot == null)
         input = Console.ReadLine()!;
         inputStart = input.Split(' ');
         robot = new Robot(Convert.ToInt32(inputStart[0]), Convert.ToInt32(inputStart[1]), inputStart[2].ToUpper());
-
+        if (!(robot.PositionX <= room.Height && robot.PositionX >= 0 && robot.PositionY <= room.Depth && robot.PositionY >= 0))
+            throw new Exception("The start is out of bounds");
     }
     catch (Exception ex)
     {
@@ -43,30 +44,23 @@ while (robot == null)
     }
 }
 
-while (inputMove == null)
+while (robot.UserMove == null)
 {
     try
     {
         Console.WriteLine("Enter move (RFRFFRFRF)");
     
         input = Console.ReadLine()!;
-        inputMove = new string[input.Length];
-        inputMove = new string[inputMove.Length];
 
-        for (int i = 0; i < inputMove.Length; i++)
-        {
-            inputMove[i] = input[i].ToString();
-        }
-        robot.UserMove = inputMove;
+        robot.UserMove = robot.splitMove(input);
     }
     catch (Exception ex)
     {
-        inputMove = null;
+        robot.UserMove = null;
         Console.WriteLine(ex.Message + " please try again");
     }
 }
 robot.DoMove();
 if (!(robot.PositionX <= room.Height && robot.PositionX >= 0 && robot.PositionY <= room.Depth && robot.PositionY >= 0))
-    Console.WriteLine("Report: Out of bounds");
-else
+    Console.WriteLine($"Report: Out of bounds, the room is {room.Height} by {room.Depth}");
     Console.WriteLine($"Report: {robot.PositionX} {robot.PositionY} {robot.Facing}");

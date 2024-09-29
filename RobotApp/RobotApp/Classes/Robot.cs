@@ -25,6 +25,16 @@ namespace RobotApp.Classes
             _facing = facing.ToUpper();
         }
 
+        public string[] splitMove(string move)
+        {
+            var inputMove = new string[move.Length];
+
+            for (int i = 0; i < move.Length; i++)
+            {
+                inputMove[i] = move[i].ToString();
+            }
+            return inputMove;
+        }
         public void DoMove()
         {
             foreach (string move in UserMove)
